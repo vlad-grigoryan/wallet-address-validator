@@ -1,6 +1,7 @@
 var XRPValidator = require('./ripple_validator');
 var ETHValidator = require('./ethereum_validator');
 var BTCValidator = require('./bitcoin_validator');
+var WAVESValidator = require('./waves_validator');
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -192,6 +193,13 @@ var CURRENCIES = [{
     name: 'bankex',
     symbol: 'bkx',
     validator: ETHValidator
+},{
+    name: 'waves',
+    symbol: 'waves',
+    expectedLength: 26,
+    version: '01',
+    addressTypes: {prod: ['54'], testnet: ['57']},
+    validator: WAVESValidator
 }];
 
 
