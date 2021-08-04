@@ -48,10 +48,10 @@
     "start": "npm run bundle && npm run minify && npm test"
   },
   "dependencies": {
-    "base-x": "^3.0.4",
-    "bcrypto": "^2.0.0",
-    "jssha": "2.3.1",
-    "safe-buffer": "^5.1.2"
+       "base-x": "^3.0.8",
+      "bcrypto": "^5.4.0",
+      "jssha": "^3.2.0",
+      "safe-buffer": "^5.2.1"
   },
   "devDependencies": {
     "browserify": "^15.1.0",
